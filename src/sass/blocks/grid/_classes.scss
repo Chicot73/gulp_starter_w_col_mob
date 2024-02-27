@@ -21,9 +21,8 @@
     }
 }
 
-//Генерация при mobile-first -- 
-//@each $bp, $width in $grid-breakpoints-min {
-@each $bp, $width in $grid-breakpoints {
+@each $bp, $width in $grid-breakpoints-min {
+
     @include media($width) {
         @for $i from 1 through $grid-columns {
             .col-#{$bp}-#{$i} {
